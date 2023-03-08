@@ -102,6 +102,10 @@ async def process_start_command(message: types.Message):
 async def process_start_command(message: types.Message):
    await message.answer('pidora otvet')
 
+@dp.message_handler(text=('НЕТ'))
+async def process_start_command(message: types.Message):
+   await message.answer('pidora otvet')
+
 
 
 if __name__ == '__main__':
