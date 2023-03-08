@@ -104,7 +104,7 @@ async def process_start_command(message: types.Message):
 
 @dp.message_handler(text=('НЕТ'))
 async def process_start_command(message: types.Message):
-   await message.answer('pidora otvet')
+   await message.answer('пидора ответ')
 
 
 
