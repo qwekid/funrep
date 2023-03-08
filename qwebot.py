@@ -81,5 +81,28 @@ async def process_start_command(message: types.Message):
 async def process_start_command(message: types.Message):
    await message.answer('хуй на')
 
+
+@dp.message_handler(text=('нет'))
+async def process_start_command(message: types.Message):
+   await message.answer('пидора ответ')
+
+@dp.message_handler(text=('Нет'))
+async def process_start_command(message: types.Message):
+   await message.answer('пидора ответ')
+
+@dp.message_handler(text=('no'))
+async def process_start_command(message: types.Message):
+   await message.answer('pidora otvet')
+
+@dp.message_handler(text=('No'))
+async def process_start_command(message: types.Message):
+   await message.answer('pidora otver')
+
+@dp.message_handler(text=('NO'))
+async def process_start_command(message: types.Message):
+   await message.answer('pidora otvet')
+
+
+
 if __name__ == '__main__':
     executor.start_polling(dp)
