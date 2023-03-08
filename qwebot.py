@@ -65,7 +65,7 @@ async def process_start_command(message: types.Message):
 async def process_start_command(message: types.Message):
    await message.answer('а может ты?' + ' 🦃')
 
-@dp.message_handler(text=('a'))
+@dp.message_handler(text=('а'))
 async def process_start_command(message: types.Message):
    await message.answer('хуй на')
 
