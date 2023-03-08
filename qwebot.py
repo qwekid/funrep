@@ -56,5 +56,16 @@ async def process_start_command(message: types.Message):
 async def process_start_command(message: types.Message):
    await message.answer('а может ты?' + ' 🦃')
 
+
+@dp.message_handler(text=('ты еблан ?'))
+async def process_start_command(message: types.Message):
+   await message.answer('а может ты?' + ' 🦃')
+
+@dp.message_handler(text=('Ты еблан ?'))
+async def process_start_command(message: types.Message):
+   await message.answer('а может ты?' + ' 🦃')
+
+
+
 if __name__ == '__main__':
     executor.start_polling(dp)
