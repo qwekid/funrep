@@ -6,6 +6,12 @@ HELP_COMMAND="""
 /help - command list
 /start - start work with this bot"""
 
+TGLS="""
+a - хуй на
+да - пизда
+нет - пидора ответ 
+ты еблан? - а может ты? """
+
 bot=Bot(TOKEN_API)
 dp=Dispatcher(bot)
 
@@ -22,6 +28,10 @@ async def help_command(mesage: types.Message):
     await mesage.answer(text="work started")
     await mesage.delete()
 
+@dp.message_handler(commands=['trigerls'])
+async def help_command(mesage: types.Message):
+    await mesage.answer(text=TGLS)
+    await mesage.delete()
 
 @dp.message_handler(text=('да'))
 async def process_start_command(message: types.Message):
