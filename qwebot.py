@@ -4,7 +4,8 @@ from cfg import TOKEN_API
 
 HELP_COMMAND="""
 /help - command list
-/start - start work with this bot"""
+/start - start work with this bot
+/trigerls - target list"""
 
 TGLS="""
 a - хуй на
@@ -33,6 +34,8 @@ async def help_command(mesage: types.Message):
     await mesage.answer(text=TGLS)
     await mesage.delete()
 
+
+
 @dp.message_handler(text=('да'))
 async def process_start_command(message: types.Message):
    await message.answer('пизда')
@@ -48,6 +51,8 @@ async def process_start_command(message: types.Message):
 @dp.message_handler(text=('Da'))
 async def process_start_command(message: types.Message):
    await message.answer('пизда')
+
+
 
 
 @dp.message_handler(text=('ты ебалан?'))
@@ -75,6 +80,10 @@ async def process_start_command(message: types.Message):
 async def process_start_command(message: types.Message):
    await message.answer('а может ты?' + ' 🦃')
 
+
+
+
+
 @dp.message_handler(text=('а'))
 async def process_start_command(message: types.Message):
    await message.answer('хуй на')
@@ -90,6 +99,9 @@ async def process_start_command(message: types.Message):
 @dp.message_handler(text=('A'))
 async def process_start_command(message: types.Message):
    await message.answer('хуй на')
+
+
+
 
 
 @dp.message_handler(text=('нет'))
@@ -115,6 +127,8 @@ async def process_start_command(message: types.Message):
 @dp.message_handler(text=('НЕТ'))
 async def process_start_command(message: types.Message):
    await message.answer('пидора ответ')
+
+
 
 
 

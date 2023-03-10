@@ -2,3 +2,4 @@
 /env
 *.pyproj
 *.sln
+cfg.py
